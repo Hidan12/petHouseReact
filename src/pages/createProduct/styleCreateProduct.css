@@ -1,0 +1,83 @@
+.create-product{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.first{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 70%;
+    height: 35vh;
+}
+.first .cont-creat-img{
+    width: 30%;
+    
+}
+.first .creat-img{
+    width: 100%;
+    height: 90%;
+}
+.first .create-dat{
+    display: flex;
+    flex-direction: column;
+    /* align-content: flex-end; */
+    align-items: stretch;
+    justify-content: space-evenly;
+}
+.second{
+    display: flex;
+    width: 60%;
+    height: 30vh;
+}
+.weight-ch{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 44%;
+    align-items: baseline;
+}
+.weight-chek{
+    margin-left: 7px;
+}
+.weight-chek input[type="checkbox"]{
+    margin-left: 5px;
+    display: none;
+}
+.weight-chek input[type="checkbox"]:checked + label{
+    background-color: rgb(173, 216, 230);
+}
+.second .price{
+    display: flex;
+    width: 50%;
+    height: 80%;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.priceStock{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.second .price .specialPrice{
+    width: 47%;
+}
+.second .price .specialPrice::after{
+    left: 17%;
+}
+.three{
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+}
+.selectCreate{
+    width: 30%;
+}
+.selectCreate::after{
+    top: -10px;
+    left: 16%;
+}
+.selectCreate select{
+    width: 99%;
+    border-radius: 7px;
+}

@@ -1,0 +1,68 @@
+
+header{
+    background-color: rgb(173, 216, 230);
+}
+.cont-first{
+    display: flex;
+    justify-content: space-between;    
+}
+
+/* estlos para el logo */
+.cont-first .cont-logo{
+    width: 9vw;
+}
+.cont-first .cont-logo picture img{
+    width: 100%;
+}
+
+/* estilos para la barra del buscador */
+.cont-first .cont-search {
+    display: flex;
+    align-items: center;
+    width: 50%;
+}
+.cont-first .cont-search input{
+    width: 100%;
+    border: none;
+    border-radius: 15px;
+}
+/* estilos para el contenedor del perfil */
+.cont-first .cont .cont-perfil{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.cont-first .cont-perfil .img{
+    width: 8vw;
+    height: 10vh;
+}
+.cont-first .cont-perfil article img{
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+
+.cont-nav-bar nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cont-nav-bar nav li{
+    list-style: none;
+}
+.cont-nav-bar nav .cont-r{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+.cont-nav-bar nav .cont-left{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+
+}
+.hiden{
+    display: none;
+}

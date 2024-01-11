@@ -1,0 +1,39 @@
+.detail{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.detail-count{
+    width: 50%;
+}
+.count-img-detail {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+}
+.count-img-detail picture img{
+    width: 30vw;
+}
+.count-info{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: #ECF0F1;
+}
+
+.count-info::before{
+    content: "Detalles";
+    position: absolute;
+    top: -11px; /* Ajusta la posición según sea necesario */
+    left: 8%; /* Centra el texto horizontalmente */
+    transform: translateX(-50%); /* Centra el texto horizontalmente */
+    background-color: inherit; /* Ajusta el color de fondo según sea necesario */
+    padding: 0 5px; /* Ajusta el relleno según sea necesario */
+    border: none; /* Quita el borde al pseudo-elemento ::before */
+}
