@@ -3,6 +3,7 @@ import './style.css'
 import { Login } from '../../pages/login/login'
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
+import { SearchVar } from '../searchvar/searchVar'
 
 // eslint-disable-next-line react/prop-types
 export function Header({user}){
@@ -30,7 +31,7 @@ export function Header({user}){
                     </Link>
                 </section>
                 <section className="cont-search">    
-                    <input type="text" placeholder='buscar' name='buscador'/>
+                    <SearchVar/>
                 </section>
                 {user ? 
                 <section className='cont-perfil'>

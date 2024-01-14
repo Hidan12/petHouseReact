@@ -1,0 +1,50 @@
+.searchComponent {
+    width: 60%;
+}
+
+.search{
+    width: 100%;
+}
+.search input{
+    width: 100%;
+}
+.search::after {
+    background-color: transparent;
+    font-size: small;
+    width: 100%;
+    top: 2px;
+    left: 53%;
+}
+.search input{
+    border: 1px solid #ccc;
+
+}
+.search input:focus{
+    border-color: blue;
+}
+.search:focus-within::after {
+    border-color: 1px solid blue;
+    animation: upWord 100ms ease-out forwards;
+}
+
+.countsearch{
+    width: 42%;
+    position: absolute;
+    background-color: white;
+    z-index: 200;
+}
+.searchPr{
+    display: flex;
+    align-items: center;
+}
+.searchPr img{
+    width: 30%;
+    height: 10vw;
+}
+
+
+@keyframes upWord {
+    to {
+        top: -15px;
+    }
+}

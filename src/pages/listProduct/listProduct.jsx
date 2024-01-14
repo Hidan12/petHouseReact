@@ -47,7 +47,16 @@ export const ListProduct = ()=>{
         <section className="listProduct">
           {carga ? data.map((info, index)=>{
             return(
-                <Card key={`${index}${info.nombre}`} name={info.nombre} price={info.precio} img={'http://localhost:3000/img/product/' + info.img} classNam={"listProduc"} category={info.categoria} description={info.descripcion} linkP={info.detail}/>
+                <Card 
+                    key={`${index}${info.nombre}`} 
+                    name={info.nombre} 
+                    price={info.precio} 
+                    img={'http://localhost:3000/img/product/' + info.img} 
+                    classNam={"listProduc"} 
+                    category={info.categoria} 
+                    description={info.descripcion} 
+                    linkP={info.detail}
+                    />
             );
           }) : <p>cargando.........</p>}  
         </section>
